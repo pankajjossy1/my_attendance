@@ -1,0 +1,17 @@
+# Ignore build outputs
+build/
+backend/server
+*.o
+*.out
+*.log
+
+# Crow and third-party libs
+backend/crow/
+
+# Editor folders
+.vscode/
+.idea/
+
+# OS/system files
+.DS_Store
+Thumbs.db
