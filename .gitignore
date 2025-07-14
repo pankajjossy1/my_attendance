@@ -1,17 +1,21 @@
-# Ignore build outputs
-build/
-backend/server
-*.o
-*.out
-*.log
+# Ignore compiled binaries
+/backend/server
+/backend/test_logger
+/backend/test_db
 
-# Crow and third-party libs
-backend/crow/
+# Logs
+/backend/logs/*
+!/backend/logs/.gitkeep
 
-# Editor folders
-.vscode/
-.idea/
+# Crow build files if any
+/backend/crow/build/
+/backend/crow/CMakeFiles/
+/backend/crow/CMakeCache.txt
 
-# OS/system files
-.DS_Store
-Thumbs.db
+# System files
+*.swp
+*.swo
+*.tmp
+
+# PostgreSQL dump/cache files
+*.sql~
